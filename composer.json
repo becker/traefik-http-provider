@@ -20,10 +20,6 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {
-        "php": ">=7.4",
-        "illuminate/support": "8.* || 9.* || 10.*"
-    },
     "autoload": {
         "psr-4": {
             "Traefik\\": "src"
