@@ -14,7 +14,7 @@ class ConfigServiceProvider extends ServiceProvider
      * 
      * @return void
      */
-    public function register(): mixed
+    public function register()
     {
         $this->app->singleton('traefik', Config::class);
     }
