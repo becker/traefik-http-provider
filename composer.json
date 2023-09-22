@@ -1,23 +1,42 @@
 {
-    "name": "stormbyte/traefik-http-config",
+    "name": "becker/traefik-http-provider",
+    "description": "A library to generate a HTTP Provider for Traefik",
+    "keywords": [
+        "traefik",
+        "http",
+        "config",
+        "php"
+    ],
     "type": "library",
-    "description": "A library to generate a Http Provider for Traefik",
-    "keywords": ["traefik","http","config","php"],
-    "homepage": "http://stormbyte.nl",
     "license": "MIT",
-    "minimum-stability": "dev",
     "authors": [
         {
             "name": "N.A. Walhof",
             "homepage": "http://stormbyte.nl"
+        },
+        {
+            "name": "Vinicius Becker",
+            "email": "vinicius@becker.eti.br"
         }
     ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4",
+        "illuminate/support": "8.* || 9.* || 10.*"
+    },
     "autoload": {
         "psr-4": {
-            "Traefik\\": "src/Traefik"
+            "Traefik\\": "src"
         }
     },
     "require-dev": {
         "phpunit/phpunit": "^9"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Traefik\\ConfigServiceProvider"
+            ]
+        }
     }
 }
