@@ -22,7 +22,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Traefik\\": "src"
+            "Traefik\\": "src/Traefik/"
         }
     },
     "require-dev": {
